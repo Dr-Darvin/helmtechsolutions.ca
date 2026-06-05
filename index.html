@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Helm Tech Solutions | IT Support & Web Design – Newmarket, Aurora, Bradford, East Gwillimbury | York Region Ontario</title>
+  <meta name="description" content="Helm Tech Solutions provides professional IT support, computer repair, network setup, and website creation for homes and small businesses in Newmarket, Aurora, Bradford, East Gwillimbury, and York Region Ontario. Call +1 437 427 5313." />
+  <meta name="keywords" content="IT support Newmarket, IT support Aurora, IT support Bradford, IT support East Gwillimbury, computer repair York Region, small business IT Ontario, home computer help Newmarket, network setup Aurora, website design Newmarket, MSP York Region Ontario, Helm Tech Solutions" />
+  <meta name="author" content="Helm Tech Solutions" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://helmtechsolutions.ca/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://helmtechsolutions.ca/" />
+  <meta property="og:title" content="Helm Tech Solutions | IT Support & Web Design – York Region Ontario" />
+  <meta property="og:description" content="Expert IT support and website creation for homes and SMBs in Newmarket, Aurora, Bradford, and East Gwillimbury. Fast, reliable, local." />
+  <meta property="og:image" content="https://helmtechsolutions.ca/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Helm Tech Solutions | IT Support – York Region Ontario" />
+  <meta name="twitter:description" content="Local IT support and web design for homes and small businesses in York Region, Ontario." />
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Helm Tech Solutions",
+    "image": "https://helmtechsolutions.ca/og-image.png",
+    "url": "https://helmtechsolutions.ca",
+    "telephone": "+14374275313",
+    "email": "info@helmtechsolutions.ca",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Newmarket",
+      "addressRegion": "ON",
+      "addressCountry": "CA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.0592,
+      "longitude": -79.4613
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Newmarket"},
+      {"@type": "City", "name": "Aurora"},
+      {"@type": "City", "name": "Bradford"},
+      {"@type": "City", "name": "East Gwillimbury"},
+      {"@type": "AdministrativeArea", "name": "York Region"}
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [],
+    "description": "Helm Tech Solutions provides IT support, computer repair, network setup, cybersecurity, and website creation for home users and small businesses in Newmarket, Aurora, Bradford, East Gwillimbury, and York Region Ontario.",
+    "priceRange": "$$",
+    "serviceType": ["IT Support", "Computer Repair", "Network Setup", "Web Design", "Cybersecurity"]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --white: #f5f5f0;
+      --mid: #888;
+      --border: #222;
+      --accent: #0a0a0a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--white);
+      color: var(--black);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5vw;
+      height: 68px;
+    }
+
+    .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 0.05em; color: var(--black); text-decoration: none; }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--black);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .nav-links a:hover { opacity: 0.4; }
+
+    .nav-cta {
+      background: var(--black);
+      color: var(--white) !important;
+      padding: 0.5rem 1.25rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem !important;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .nav-cta:hover { opacity: 0.75 !important; }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-bottom: 1px solid var(--border);
+      padding-top: 68px;
+    }
+
+    .hero-left {
+      padding: 8vw 5vw 6vw 5vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-right: 1px solid var(--border);
+    }
+
+    .hero-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 2rem;
+    }
+
+    .hero-h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(4rem, 8vw, 9rem);
+      line-height: 0.92;
+      letter-spacing: 0.01em;
+      margin-bottom: 2rem;
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: #444;
+      max-width: 420px;
+      margin-bottom: 3rem;
+      line-height: 1.7;
+    }
+
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .btn-primary {
+      background: var(--black);
+      color: var(--white);
+      padding: 0.9rem 2rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--black);
+      transition: background 0.2s, color 0.2s;
+      display: inline-block;
+    }
+
+    .btn-primary:hover { background: transparent; color: var(--black); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--black);
+      padding: 0.9rem 2rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--black);
+      transition: background 0.2s, color 0.2s;
+      display: inline-block;
+    }
+
+    .btn-outline:hover { background: var(--black); color: var(--white); }
+
+    .hero-right {
+      background: var(--black);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 5vw;
+      gap: 0;
+    }
+
+    .hero-stat {
+      border-top: 1px solid #333;
+      padding: 1.8rem 0;
+    }
+
+    .hero-stat:last-child { border-bottom: 1px solid #333; }
+
+    .hero-stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3.5rem;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .hero-stat-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #666;
+      margin-top: 0.3rem;
+    }
+
+    .hero-areas {
+      margin-top: auto;
+      padding-top: 3rem;
+    }
+
+    .hero-areas-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-areas-list {
+      font-size: 0.85rem;
+      color: #aaa;
+      line-height: 1.9;
+    }
+
+    /* ── SECTION SHARED ── */
+    section { border-bottom: 1px solid var(--border); }
+
+    .section-header {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-num {
+      padding: 3rem 5vw;
+      border-right: 1px solid var(--border);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--mid);
+      text-transform: uppercase;
+    }
+
+    .section-title-wrap { padding: 3rem 5vw; }
+
+    .section-h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 5rem);
+      line-height: 0.95;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── ABOUT ── */
+    .about-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .about-copy {
+      padding: 5vw;
+      border-right: 1px solid var(--border);
+    }
+
+    .about-copy p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      max-width: 520px;
+    }
+
+    .about-copy p:last-child { margin-bottom: 0; }
+
+    .about-contact {
+      padding: 5vw;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .contact-item-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-item-val {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--black);
+      text-decoration: none;
+    }
+
+    .contact-item-val:hover { opacity: 0.5; }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service-card {
+      padding: 3.5rem 3vw;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card:nth-child(3n) { border-right: none; }
+    .service-card:nth-last-child(-n+3) { border-bottom: none; }
+
+    .service-card:hover { background: var(--black); }
+    .service-card:hover .service-name,
+    .service-card:hover .service-desc { color: var(--white); }
+    .service-card:hover .service-num { color: #555; }
+
+    .service-num {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      color: #ccc;
+      margin-bottom: 2rem;
+      transition: color 0.25s;
+    }
+
+
+    .service-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.75rem;
+      transition: color 0.25s;
+    }
+
+    .service-desc {
+      font-size: 0.875rem;
+      color: #666;
+      line-height: 1.7;
+      transition: color 0.25s;
+    }
+
+    /* ── SERVICE AREAS ── */
+    .areas-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .area-tile {
+      padding: 4rem 3vw;
+      border-right: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .area-tile:last-child { border-right: none; }
+
+    .area-tile-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.5rem;
+    }
+
+    .area-tile-region {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+
+    /* ── CONTACT ── */
+    .contact-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-left {
+      padding: 6vw 5vw;
+      border-right: 1px solid var(--border);
+    }
+
+    .contact-left p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+      max-width: 420px;
+    }
+
+    .contact-detail {
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-right {
+      background: var(--black);
+      padding: 6vw 5vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-form-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #666;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #333;
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      padding: 0.6rem 0;
+      margin-bottom: 2rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus { border-color: #888; }
+
+    .contact-form textarea { height: 100px; resize: none; }
+
+    .contact-form select option { background: var(--black); }
+
+    .contact-submit {
+      background: var(--white);
+      color: var(--black);
+      border: none;
+      padding: 1rem 2.5rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      align-self: flex-start;
+    }
+
+    .contact-submit:hover { opacity: 0.7; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--black);
+      color: var(--white);
+      padding: 3rem 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; letter-spacing: 0.05em; color: var(--white); }
+
+    .footer-copy {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      color: #555;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .footer-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #555;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--white); }
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      #hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 6rem 6vw 4rem; border-right: none; border-bottom: 1px solid var(--border); }
+      .hero-right { padding: 4rem 6vw; }
+      .hero-h1 { font-size: clamp(3.5rem, 14vw, 6rem); }
+
+      .section-header { grid-template-columns: 1fr; }
+      .section-num { border-right: none; border-bottom: 1px solid var(--border); padding: 1.5rem 6vw; }
+      .section-title-wrap { padding: 2rem 6vw; }
+
+      .about-body { grid-template-columns: 1fr; }
+      .about-copy { border-right: none; border-bottom: 1px solid var(--border); padding: 4rem 6vw; }
+      .about-contact { padding: 4rem 6vw; }
+
+      .services-grid { grid-template-columns: 1fr; }
+      .service-card { border-right: none !important; border-bottom: 1px solid var(--border) !important; }
+
+      .areas-body { grid-template-columns: 1fr 1fr; }
+      .area-tile { border-bottom: 1px solid var(--border); }
+      .area-tile:nth-child(2n) { border-right: none; }
+
+      .contact-body { grid-template-columns: 1fr; }
+      .contact-left { border-right: none; border-bottom: 1px solid var(--border); }
+
+      .nav-links { display: none; }
+
+      footer { flex-direction: column; align-items: flex-start; }
+      .footer-links { flex-wrap: wrap; gap: 1rem; }
+    }
+
+    /* Fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav role="navigation" aria-label="Main navigation">
+  <a href="#hero" class="nav-logo" aria-label="Helm Tech Solutions Home">HELM<span style="color:#008ECC;"> Tech Soulutions</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#areas">Service Areas</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="tel:+14374275313" class="nav-cta">Call Now</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero" aria-label="Hero">
+  <div class="hero-left">
+    <p class="hero-tag">IT Support &amp; Web Design · York Region, Ontario</p>
+    <h1 class="hero-h1">Take<br>Control<br>of Your<br>Tech.</h1>
+    <p class="hero-sub">Helm Tech Solutions delivers fast, reliable IT support and modern web solutions for homes and small businesses across Newmarket, Aurora, Bradford, and East Gwillimbury.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Get Support</a>
+      <a href="#services" class="btn-outline">Our Services</a>
+    </div>
+  </div>
+  <div class="hero-right" aria-hidden="true">
+    <div class="hero-areas">
+      <p class="hero-areas-label">Serving York Region</p>
+      <p class="hero-areas-list">
+        Newmarket · Aurora<br>
+        Bradford · East Gwillimbury<br>
+        &amp; surrounding communities
+      </p>
+    </div>
+    <div class="hero-stat"><div class="hero-stat-num">24H</div><div class="hero-stat-label">Response Guarantee</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">SMB</div><div class="hero-stat-label">Small Business Specialists</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">LOCAL</div><div class="hero-stat-label">York Region Based</div></div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about" aria-label="About Helm Tech Solutions">
+  <div class="section-header">
+    <div class="section-num">01 / About Us</div>
+    <div class="section-title-wrap">
+      <h2 class="section-h2">Your Local<br>Tech Partner</h2>
+    </div>
+  </div>
+  <div class="about-body">
+    <div class="about-copy fade-in">
+      <p>Helm Tech Solutions is a York Region–based IT support and web design company built for real people — homeowners who need their devices to just work, and small businesses that need technology they can count on.</p>
+      <p>We serve clients across <strong>Newmarket, Aurora, Bradford, East Gwillimbury</strong>, and surrounding communities in York Region, Ontario. Whether you're dealing with a slow computer, a crashed network, or you need a professional website that actually shows up on Google — we've got you.</p>
+      <p>No jargon. No inflated invoices. Just straightforward tech support from people who know the area and understand what local businesses actually need.</p>
+    </div>
+    <div class="about-contact fade-in">
+      <div class="contact-item">
+        <p class="contact-item-label">Phone</p>
+        <a href="tel:+14374275313" class="contact-item-val">+1 437 427 5313</a>
+      </div>
+      <div class="contact-item">
+        <p class="contact-item-label">Email</p>
+        <a href="mailto:info@helmtechsolutions.ca" class="contact-item-val">info@helmtechsolutions.ca</a>
+      </div>
+      <div class="contact-item">
+        <p class="contact-item-label">Service Region</p>
+        <p class="contact-item-val" style="font-size:0.95rem;font-weight:400;">Newmarket · Aurora · Bradford<br>East Gwillimbury · York Region, ON</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section id="services" aria-label="Our IT Services">
+  <div class="section-header">
+    <div class="section-num">02 / Services</div>
+    <div class="section-title-wrap">
+      <h2 class="section-h2">What We<br>Fix &amp; Build</h2>
+    </div>
+  </div>
+  <div class="services-grid">
+
+    <article class="service-card fade-in" aria-label="Computer Repair">
+      <p class="service-num">01</p>
+      <h3 class="service-name">Computer Repair</h3>
+      <p class="service-desc">Slow PCs, blue screens, virus removal, hardware failures, overheating — we diagnose and fix desktop and laptop issues fast. Windows and Mac supported.</p>
+    </article>
+
+    <article class="service-card fade-in" aria-label="Network Setup">
+      <p class="service-num">02</p>
+      <h3 class="service-name">Network &amp; WiFi Setup</h3>
+      <p class="service-desc">Home WiFi dead zones, slow internet, router configuration, wired network setup for offices, VPN for remote work — we get your connectivity sorted.</p>
+    </article>
+
+    <article class="service-card fade-in" aria-label="Cybersecurity">
+      <p class="service-num">03</p>
+      <h3 class="service-name">Cybersecurity</h3>
+      <p class="service-desc">Antivirus setup, malware removal, firewall configuration, password managers, phishing protection, and employee security awareness for SMBs.</p>
+    </article>
+
+    <article class="service-card fade-in" aria-label="Data Backup and Recovery">
+      <p class="service-num">04</p>
+      <h3 class="service-name">Data Backup &amp; Recovery</h3>
+      <p class="service-desc">Lost files, crashed drives, accidental deletions — we recover what matters. We also set up automated backup solutions so it never happens again.</p>
+    </article>
+
+    <article class="service-card fade-in" aria-label="Software and Cloud Support">
+      <p class="service-num">05</p>
+      <h3 class="service-name">Software &amp; Cloud Support</h3>
+      <p class="service-desc">Microsoft 365 setup, Google Workspace, software licensing, OS upgrades, app troubleshooting, and cloud storage configuration for your business.</p>
+    </article>
+
+    <article class="service-card fade-in" aria-label="Printer and Device Support">
+      <p class="service-num">06</p>
+      <h3 class="service-name">Printer &amp; Device Setup</h3>
+      <p class="service-desc">Printer connectivity issues, shared network printing, scanner setup, smart device configuration — all the frustrating stuff that wastes your day.</p>
+    </article>
+
+    <article class="service-card fade-in" aria-label="IT Support for Small Business">
+      <p class="service-num">07</p>
+      <h3 class="service-name">SMB IT Support</h3>
+      <p class="service-desc">Ongoing managed IT support for small and medium businesses in York Region. We act as your outsourced IT team — proactive, responsive, and local.</p>
+    </article>
+
+    <article class="service-card fade-in" aria-label="New Computer Setup">
+      <p class="service-num">08</p>
+      <h3 class="service-name">New Device Setup</h3>
+      <p class="service-desc">Got a new laptop or desktop? We handle setup, data migration from your old device, software installation, and security hardening — ready to use from day one.</p>
+    </article>
+
+    <article class="service-card fade-in" aria-label="Website Design and Development">
+      <p class="service-num">09</p>
+      <h3 class="service-name">Website Design</h3>
+      <p class="service-desc">Professional websites for local businesses in Newmarket, Aurora, Bradford, and East Gwillimbury. Mobile-ready, SEO-optimized, and designed to convert visitors into customers.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ── SERVICE AREAS ── -->
+<section id="areas" aria-label="Service Areas in York Region Ontario">
+  <div class="section-header">
+    <div class="section-num">03 / Service Areas</div>
+    <div class="section-title-wrap">
+      <h2 class="section-h2">Where We<br>Serve</h2>
+    </div>
+  </div>
+  <div class="areas-body">
+    <div class="area-tile fade-in">
+      <h3 class="area-tile-name">Newmarket</h3>
+      <p class="area-tile-region">York Region · Ontario</p>
+    </div>
+    <div class="area-tile fade-in">
+      <h3 class="area-tile-name">Aurora</h3>
+      <p class="area-tile-region">York Region · Ontario</p>
+    </div>
+    <div class="area-tile fade-in">
+      <h3 class="area-tile-name">Bradford</h3>
+      <p class="area-tile-region">York Region · Ontario</p>
+    </div>
+    <div class="area-tile fade-in">
+      <h3 class="area-tile-name">East Gwillimbury</h3>
+      <p class="area-tile-region">York Region · Ontario</p>
+    </div>
+  </div>
+  <div style="padding: 3rem 5vw; border-top: 1px solid var(--border);">
+    <p style="font-size:0.875rem; color:#666; max-width:700px; line-height:1.8;">
+      Helm Tech Solutions provides on-site and remote IT support to homes and businesses throughout <strong>Newmarket, Aurora, Bradford West Gwillimbury, East Gwillimbury, Sharon, Holland Landing, Queensville</strong>, and the broader <strong>York Region, Ontario</strong> area. Not sure if we cover your area? Give us a call — we likely do.
+    </p>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact" aria-label="Contact Helm Tech Solutions">
+  <div class="section-header">
+    <div class="section-num">04 / Contact</div>
+    <div class="section-title-wrap">
+      <h2 class="section-h2">Let's Fix<br>Your Tech</h2>
+    </div>
+  </div>
+  <div class="contact-body">
+    <div class="contact-left fade-in">
+      <p>Ready to get your technology working properly? Reach out — we respond within one business day, often same day.</p>
+      <div class="contact-detail">
+        <p class="contact-item-label">Phone</p>
+        <a href="tel:+14374275313" class="contact-item-val" style="font-size:1.3rem;">+1 437 427 5313</a>
+      </div>
+      <div class="contact-detail">
+        <p class="contact-item-label">Email</p>
+        <a href="mailto:info@helmtechsolutions.ca" class="contact-item-val">info@helmtechsolutions.ca</a>
+      </div>
+      <div class="contact-detail" style="margin-top:2rem;">
+        <p class="contact-item-label">Serving</p>
+        <p style="font-size:0.9rem; line-height:1.9; color:#555;">
+          Newmarket · Aurora · Bradford<br>
+          East Gwillimbury · York Region, ON
+        </p>
+      </div>
+    </div>
+    <div class="contact-right">
+      <form class="contact-form" name="contact" method="POST" data-netlify="true" action="mailto:info@helmtechsolutions.ca" aria-label="Contact form">
+        <div>
+          <label class="contact-form-label" for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+        </div>
+        <div>
+          <label class="contact-form-label" for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@company.ca" required autocomplete="email" />
+        </div>
+        <div>
+          <label class="contact-form-label" for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="+1 905 000 0000" autocomplete="tel" />
+        </div>
+        <div>
+          <label class="contact-form-label" for="service">Service Needed</label>
+          <select id="service" name="service">
+            <option value="">Select a service</option>
+            <option>Computer Repair</option>
+            <option>Network / WiFi Setup</option>
+            <option>Cybersecurity</option>
+            <option>Data Backup &amp; Recovery</option>
+            <option>Software &amp; Cloud Support</option>
+            <option>SMB IT Support</option>
+            <option>Website Design</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label class="contact-form-label" for="message">Tell Us What's Going On</label>
+          <textarea id="message" name="message" placeholder="Describe your issue or project..."></textarea>
+        </div>
+        <button type="submit" class="contact-submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer role="contentinfo">
+  <span class="footer-logo">HELM<span style="color:#008ECC;"> Tech Soulutions</span></span>
+  <p class="footer-copy">© 2025 Helm Tech Solutions · IT Support &amp; Web Design · York Region, Ontario<br>Newmarket · Aurora · Bradford · East Gwillimbury</p>
+  <ul class="footer-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#areas">Areas</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="tel:+14374275313">+1 437 427 5313</a></li>
+  </ul>
+</footer>
+
+<script>
+  // Intersection observer for fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Contact form handler for GitHub Pages (no backend)
+  document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const service = document.getElementById('service').value;
+    const message = document.getElementById('message').value;
+    const subject = encodeURIComponent('Helm Tech Solutions Inquiry – ' + (service || 'General'));
+    const body = encodeURIComponent(
+      'Name: ' + name + '\n' +
+      'Email: ' + email + '\n' +
+      'Phone: ' + (phone || 'N/A') + '\n' +
+      'Service: ' + (service || 'N/A') + '\n\n' +
+      'Message:\n' + message
+    );
+    window.location.href = 'mailto:info@helmtechsolutions.ca?subject=' + subject + '&body=' + body;
+  });
+</script>
+
+</body>
+</html>
